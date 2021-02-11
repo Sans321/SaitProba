@@ -1,0 +1,107 @@
+body{
+  position: absolute;
+width: 1445px;
+height: 4759px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+}
+
+
+h1{
+  position: absolute;
+left: 44.89%;
+right: 20%;
+top: 0%;
+bottom: 9.76%;
+
+font-family: Gilroy-Bold;
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+
+/* Black */
+
+color: #070707;
+}
+
+
+p{
+  position: absolute;
+left: 40.86%;
+right: 15%;
+top: 2.66%;
+bottom: 8.42%;
+
+font-family: Gilroy-Medium;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+/* Black */
+
+color: #070707;
+}
+
+
+dd{
+  position: absolute;
+left: 41.83%;
+right: 18%;
+top: 10%;
+bottom: 2.59%;
+
+font-family: Gilroy-Medium;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #828282;
+}
+
+
+.Sendmessage{
+  position: absolute;
+width: 180.5px;
+height: 42px;
+left: 800.76px;
+top: 5%;
+}
+
+
+.In{
+  position: absolute;
+width: 40.17px;
+height: 40.06px;
+left: 760px;
+top: 7.64%;
+}
+
+
+.Insta{
+  
+position: absolute;
+width: 39.11px;
+height: 40px;
+left: 840px;
+top: 7.64%;
+}
+
+
+.Be{
+  position: absolute;
+width: 40.11px;
+height: 40px;
+left: 925px;
+top: 7.64%;
+}
+
+
+.Bool{
+  position: absolute;
+width: 39.11px;
+height: 40px;
+left: 1010px;
+top: 7.64%;
+}
