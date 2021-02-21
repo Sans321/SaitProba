@@ -1,0 +1,94 @@
+body{
+  position: absolute;
+width: 1445px;
+height: 4759px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+}
+
+
+h1{
+  position: absolute;
+left: 45.8%;
+right: 25%;
+top: 0.68%;
+bottom: 70.77%;
+
+font-family: Gilroy-Bold;
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+
+/* Black */
+
+color: #070707;
+}
+
+
+p{
+position: absolute;
+left: 42.18%;
+right: 21%;
+top: 4.68%;
+bottom: 68.81%;
+
+font-family: Gilroy-Medium;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+/* Black */
+
+color: #070707;
+
+/* Black */
+
+color: #070707;
+}
+
+
+.AE{
+  
+position: absolute;
+width: 166.46px;
+height: 206.27px;
+left:960.13px;
+top: 8%;
+
+}
+
+
+.AI{
+  position: absolute;
+width: 166.46px;
+height: 206.27px;
+left: 650.42px;
+top: 8%;
+
+}
+
+
+.PS{
+position: absolute;
+width: 166.46px;
+height: 206.29px;
+left: 345.71px;
+top: 8%;
+
+
+
+}
+
+
+.Figma{
+ position: absolute;
+width: 166.46px;
+height: 205.27px;
+left: 1250.84px;
+top: 8%;
+
+
+
+}
