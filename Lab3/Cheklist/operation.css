@@ -1,0 +1,15 @@
+body{
+    width: 320px;
+    box-shadow: 0 3px 20px #00000023;
+    font-family: 'Gilroy', sans-serif;
+    padding: 10px;
+    margin: 20px 0 0 20px;
+    color: var(--main);
+  }
+  .todo-list-example {
+    padding: 20px
+  }
+  
+  .crossed {
+    text-decoration: line-through;
+  }

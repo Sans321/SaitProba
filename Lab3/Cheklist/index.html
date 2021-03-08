@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="operation.css"><script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <title>Checklist</title>
+</head>
+<body>
+
+    <div id="todo-list-example">
+        <header><h1>Чеклист</h1></header>
+        <form @submit.prevent="addNewTodo">
+            <label for="new-todo">Новая задача</label>
+            <input v-model="title" id="new-todo">
+            <button>Добавить</button>
+        </form>
+        <ul>
+            <todo-item
+                v-for="(todo, index) in todos"
+                :key="todo.id"
+                :title="todo.title"
+                :status="todo.status"
+                @toggle-status="toggleStatus(index)"
+                @remove="removeTodo(index)"
+            >   
+            </todo-item>
+            {{ title }}
+        </ul>
+    </div>
+    
+        
+
+    <script src="operation.js"></script>
+ 
+
+
+
+
+
+
+</body>
