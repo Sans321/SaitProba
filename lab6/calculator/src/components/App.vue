@@ -1,10 +1,11 @@
 <template actionBarHidden="true">
     <Page actionBarHidden="true"  class="app">
       <StackLayout>
+        <Image src="res://2222" stretch="none"/> 
         <Label class='city'  :text='listOfItems[this.selectedItem]' @tap='city()'/>
         <ScrollView orientation="vertical"> 
            <StackLayout class='forecast' orientation="vertical">
-              <Image class='img' :src="imagePath" stretch="none" @tap='check()'/> 
+              
               <label class='text'> Температура: {{weather.fact.temp}}</label>
               <label class='text'>ощущается: {{weather.fact.feels_like}}</label>
               <label class='text'> Ветер {{weather.fact.wind_speed}} m/c, Влажность {{weather.fact.humidity}}%</label>
@@ -43,19 +44,19 @@ import * as ApplicationSettings from "application-settings";
             latitude: 77.35334,
             longitude: 60.43998
           },
-          { title: "Усть-Ишим",
+          { title: "Москва",
             toString: () => {
-              return 'Усть-Ишим';
+              return 'Москва';
             },
-            latitude: 57.6935000,
-            longitude: 71.1665000
+            latitude: 55.451332,
+            longitude: 37.369336
           },
-          { title: "Тевриз",
+          { title: "Барнаул",
             toString: () => {
-              return 'Тевриз';
+              return 'Барнаул';
             },
-            latitude: 57.5090000,
-            longitude: 72.4042000
+            latitude: 53.22,
+            longitude: 83.45
           },
           { title: "Викулово",
             toString: () => {
@@ -64,12 +65,12 @@ import * as ApplicationSettings from "application-settings";
             latitude: 56.8166700,
             longitude: 70.6106900
           },
-          { title: "Вагай",
+          { title: "Сочи",
             toString: () => {
-              return 'Вагай';
+              return 'Сочи';
             },
-            latitude: 57.9356600,
-            longitude: 69.0195300
+            latitude: 43.359502,
+            longitude: 69.435414
           },
           { title: "Дубровное",
             toString: () => {
@@ -105,7 +106,7 @@ import * as ApplicationSettings from "application-settings";
             pressure_mm	: 0,
             }
         },
-        cities:['Ханты-Мансийск', 'Омск', 'Стрежевой', 'Усть-Ишим', 'Тевриз', 'Викулово', 'Вагай', 'Дубровное', 'Кип', 'Тавинск']
+        cities:['Ханты-Мансийск', 'Омск', 'Стрежевой', 'Москва', 'Барнаул', 'Викулово', 'Сочи', 'Дубровное', 'Кип', 'Тавинск']
       }
     },
     mounted(){
@@ -120,7 +121,6 @@ import * as ApplicationSettings from "application-settings";
       else{
         this.city()
       }
-      this.imagePath = '~/res/' + String(this.weather.fact.condition) + '.png';
     },
     methods:{
       check(){
@@ -153,22 +153,20 @@ import * as ApplicationSettings from "application-settings";
 
 <style scoped>
 .app{
-    background-color: #bebebe;
+    background-color: #537fdd;
 }
 .forecast{
   font-size: 20;
   margin: 50px 70px;
   padding: 20px;
   padding-bottom: 90px;
-  background-color: #979797;
+  background-color: #3f9473;
   border-radius: 40%;
 }
-.img{
-  margin: 50px 32%;
-}
+
 .text{
     margin: 50px auto;
-    background-color: #979797;
+    background-color: #3f9473;
     border-radius: 10%;
     padding: 40px;
 }
